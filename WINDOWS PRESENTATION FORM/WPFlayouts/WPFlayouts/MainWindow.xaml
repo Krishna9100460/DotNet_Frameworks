@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFlayouts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFlayouts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="WrapPanel :" FontFamily="Arial Black"/>
+        <WrapPanel Orientation="Vertical" Margin="10,25,564,0" Height="203" VerticalAlignment="Top" >
+            <Label Content="Name" FontFamily="Arial Black"/>
+            <TextBox Text="name" Width="188" FontFamily="Arial Black"/>
+            <Label Content="Age" FontFamily="Arial Black"/>
+            <TextBox Text="Age" FontFamily="Arial Black"/>
+            <Label Content="Loaction" FontFamily="Arial Black"/>
+            <TextBox Text="Loaction" FontFamily="Arial Black"/>
+        </WrapPanel>
+
+        <Label Content="DockPanel :" Margin="370,157,-370,-157"  FontFamily="Arial Black"/>
+        <DockPanel Margin="24,187,24,25" LastChildFill="True">
+            <Button Content="Right" Width="50" DockPanel.Dock="Right" Click="Button_Click" MouseEnter="onMouseEnter"/>
+            <Button Content="Left" Width="50"  Click="Button_Click"/>
+            <Button Content="Top" DockPanel.Dock="Top" Height="61"  Click="Button_Click"/>
+            <Button Content="Buttom" DockPanel.Dock="Bottom" Height="61" VerticalAlignment="Bottom"  Click="Button_Click"/>
+            <Button Content="center" DockPanel.Dock="Right" Width="632"  Click="Button_Click"/>
+        </DockPanel>
+
+        <Rectangle x:Name="mer" MouseEnter="onMouseEnter" MouseLeave="OnMouseLeave" MouseDown="OnMouseDown" MouseMove="OnMouseMove" Margin="360,10,76,371" Fill="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+
+        <TextBlock Text="hi" x:Name="txt1" Margin="316,108,378,289"/>
+        <TextBlock Text="hello" x:Name="txt2" Margin="490,106,186,287"/>
+        <TextBlock Text="hh" Name="txt3" Margin="659,95,10,294"/>
+
+    </Grid>
+</Window>

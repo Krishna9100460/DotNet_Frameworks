@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPFRoutedEvents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRoutedEvents"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowChrome.ResizeGripDirection="BottomLeft"
+        Title="MainWindow" Height="450" Width="800" >
+    <Grid>
+        <local:CustomControl1 Click = "MyCustomControl_Click" FontFamily="Arial Black" FontSize="24" Margin="50,50,50,243" />
+        <TextBlock  Name="txtblock" Margin="55,204,60,112" FontFamily="Bodoni MT Black" FontSize="18" />
+    </Grid>
+</Window>
