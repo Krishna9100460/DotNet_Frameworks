@@ -1,0 +1,5 @@
+D:\DLL\CalculatorApp.exe
+D:\DLL\CalculatorApp.dll
+D:\DLL\CalculatorApp.deps.json
+D:\DLL\CalculatorApp.runtimeconfig.json
+D:\DLL\CalculatorApp.pdb

@@ -1,0 +1,230 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\contactwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\contactwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\contactwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\contactwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\contacthelper\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\contacthelper\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\update_dalete_contact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\update_dalete_contact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\update_dalete_contact.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\update_dalete_contact.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\controllers\\contactcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\controllers\\contactcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|d:\\data\\windows presentation form\\wpf new\\contactapp\\contactapp\\controllers\\contactcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B092CDA2-A663-4E17-A0D4-23318543CAD1}|ContactApp\\ContactApp.csproj|solutionrelative:contactapp\\controllers\\contactcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\ContactHelper\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactApp\\ContactHelper\\Contact.cs",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\ContactHelper\\Contact.cs",
+              "RelativeToolTip": "ContactApp\\ContactHelper\\Contact.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-26T07:14:10.862Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Update_Dalete_contact.xaml.cs",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Update_Dalete_contact.xaml.cs",
+              "RelativeDocumentMoniker": "ContactApp\\Update_Dalete_contact.xaml.cs",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Update_Dalete_contact.xaml.cs",
+              "RelativeToolTip": "ContactApp\\Update_Dalete_contact.xaml.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwB8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-26T08:49:06.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Update_Dalete_contact.xaml",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Update_Dalete_contact.xaml",
+              "RelativeDocumentMoniker": "ContactApp\\Update_Dalete_contact.xaml",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Update_Dalete_contact.xaml",
+              "RelativeToolTip": "ContactApp\\Update_Dalete_contact.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-10-26T08:49:03.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\ContactWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ContactApp\\ContactWindow.xaml.cs",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\ContactWindow.xaml.cs",
+              "RelativeToolTip": "ContactApp\\ContactWindow.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAADwv1MAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-26T08:46:05.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactWindow.xaml",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\ContactWindow.xaml",
+              "RelativeDocumentMoniker": "ContactApp\\ContactWindow.xaml",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\ContactWindow.xaml",
+              "RelativeToolTip": "ContactApp\\ContactWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-10-26T08:46:03.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ContactApp\\MainWindow.xaml",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\MainWindow.xaml",
+              "RelativeToolTip": "ContactApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-10-26T11:24:08.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ContactApp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ContactApp\\MainWindow.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAASwCYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-26T06:23:22.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContactControl.xaml",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Controllers\\ContactControl.xaml",
+              "RelativeDocumentMoniker": "ContactApp\\Controllers\\ContactControl.xaml",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Controllers\\ContactControl.xaml",
+              "RelativeToolTip": "ContactApp\\Controllers\\ContactControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-10-26T06:23:17.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactControl.xaml.cs",
+              "DocumentMoniker": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Controllers\\ContactControl.xaml.cs",
+              "RelativeDocumentMoniker": "ContactApp\\Controllers\\ContactControl.xaml.cs",
+              "ToolTip": "D:\\Data\\WINDOWS PRESENTATION FORM\\WPF NEW\\ContactApp\\ContactApp\\Controllers\\ContactControl.xaml.cs",
+              "RelativeToolTip": "ContactApp\\Controllers\\ContactControl.xaml.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAkwCoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-26T06:23:06.494Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

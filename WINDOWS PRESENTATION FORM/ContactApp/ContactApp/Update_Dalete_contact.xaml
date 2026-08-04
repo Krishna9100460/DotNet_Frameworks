@@ -1,0 +1,22 @@
+﻿<Window x:Class="ContactApp.Update_Dalete_contact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContactApp"
+        mc:Ignorable="d"
+        Title="Update/Delete contact" Height="450" Width="500">
+    <Grid Background="LightBlue">
+        <StackPanel Margin="10">
+            <Label Content="Name :" FontStyle="Italic" FontSize="15" FontWeight="Bold"/>
+            <TextBox x:Name="NameTxt" />
+            <Label Content="Email :" FontStyle="Italic" FontSize="15" FontWeight="Bold"/>
+            <TextBox x:Name="EmialTxt" />
+            <Label Content="Phone Number :" FontStyle="Italic" FontSize="15" FontWeight="Bold"/>
+            <TextBox x:Name="numberTxt" />
+            <Button Content="Update" Margin="-250,10,5,0" Click="Update_Clicked" Style="{DynamicResource NewContact}"/>
+            <Button Content="Delete" Margin="150,-30,0,0" Click="Delete_Clicked" Style="{DynamicResource NewContact}"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

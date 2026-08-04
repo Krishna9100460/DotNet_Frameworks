@@ -1,0 +1,48 @@
+﻿<Window x:Class="CalculatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Calculator" Height="610" Width="400" Icon="/calicon.jpg" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+       
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="0" x:Name="dataLable" Grid.Row="0" Grid.ColumnSpan="4" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Margin="10,6,10,10"/>
+        <Label Content="0" x:Name="ResultLable" Grid.Row="0" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="60" FontWeight="Bold" Margin="5"/>
+        <Button x:Name="AcBtn" Style="{StaticResource numberBtnStyle}" Background="Red" Margin="2,2,2,2" FontWeight="ExtraBlack" FontSize="20" Content="AC" Grid.Row="1" Click="AcBtn_Clicked"/>
+        <Button x:Name="SevenBtn" Style="{StaticResource numberBtnStyle}" Content="7" Grid.Row="2" Click="Number_Clicked"/>
+        <Button x:Name="FourBtn"  Style="{StaticResource numberBtnStyle}" Content="4" Grid.Row="3" Click="Number_Clicked"/>
+        <Button x:Name="OneBtn"  Style="{StaticResource numberBtnStyle}" Content="1" Grid.Row="4" Click="Number_Clicked"/>
+        <Button x:Name="Plus_MinusBtn" Style="{StaticResource OperatorBtnStyle}" Content="x^2"   Grid.Row="1" Grid.Column="1" Click="SquareBtn_Clicked"/>
+        <Button x:Name="EightBtn"  Style="{StaticResource numberBtnStyle}" Content="8" Grid.Row="2" Grid.Column="1" Click="Number_Clicked"/>
+        <Button x:Name="FiveBtn"  Style="{StaticResource numberBtnStyle}" Content="5" Grid.Row="3"  Grid.Column="1" Click="Number_Clicked"/>
+        <Button x:Name="TwoBtn"  Style="{StaticResource numberBtnStyle}" Content="2" Grid.Row="4" Grid.Column="1"  Click="Number_Clicked"/>
+        <Button x:Name="PerBtn" Style="{StaticResource OperatorBtnStyle}" Content="%" Grid.Row="1" Grid.Column="2" Click="PerBtn_Clicked"/>
+        <Button x:Name="NineBtn"  Style="{StaticResource numberBtnStyle}" Content="9" Grid.Row="2" Grid.Column="2" Click="Number_Clicked"/>
+        <Button x:Name="SixBtn"  Style="{StaticResource numberBtnStyle}" Content="6" Grid.Row="3" Grid.Column="2" Click="Number_Clicked"/>
+        <Button x:Name="Threebtn"  Style="{StaticResource numberBtnStyle}" Content="3" Grid.Row="4" Grid.Column="2" Click="Number_Clicked"/>
+        <Button x:Name="DotBtn"   Style="{StaticResource numberBtnStyle}" Content="." Grid.Row="5" Grid.Column="2" Click="DotBtm_Clicked"/>
+        <Button x:Name="DivBtn" Style="{StaticResource OperatorBtnStyle}" Content="/" Grid.Row="1" Grid.Column="3" Click="Operation_Clicked"/>
+        <Button x:Name="PlusBtn" Style="{StaticResource OperatorBtnStyle}" Content="+" Grid.Row="2" Grid.Column="3" Click="Operation_Clicked"/>
+        <Button x:Name="MinusBtn" Style="{StaticResource OperatorBtnStyle}" Content="-" Grid.Row="3" Grid.Column="3" Click="Operation_Clicked"/>
+        <Button x:Name="MulBtn" Style="{StaticResource OperatorBtnStyle}" Content="*" Grid.Row="4" Grid.Column="3" Click="Operation_Clicked"/>
+        <Button x:Name="EqualBtn" Style="{StaticResource OperatorBtnStyle}" Content="=" Grid.Row="5" Grid.Column="3" Click="EuqalBtn_click"/>
+        <Button x:Name="zeroBtn" Style="{StaticResource numberBtnStyle}" Content="0" Grid.ColumnSpan="2" Grid.Row="5" Click="Number_Clicked"/>
+    </Grid>
+</Window>
