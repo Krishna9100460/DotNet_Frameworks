@@ -1,0 +1,7 @@
+D:\Data\WINDOWS PRESENTATION FORM\WPF NEW\Practice\Practice\bin\Debug\Practice.exe.config
+D:\Data\WINDOWS PRESENTATION FORM\WPF NEW\Practice\Practice\bin\Debug\Practice.exe
+D:\Data\WINDOWS PRESENTATION FORM\WPF NEW\Practice\Practice\bin\Debug\Practice.pdb
+D:\Data\WINDOWS PRESENTATION FORM\WPF NEW\Practice\Practice\obj\Debug\Practice.csproj.AssemblyReference.cache
+D:\Data\WINDOWS PRESENTATION FORM\WPF NEW\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
+D:\Data\WINDOWS PRESENTATION FORM\WPF NEW\Practice\Practice\obj\Debug\Practice.exe
+D:\Data\WINDOWS PRESENTATION FORM\WPF NEW\Practice\Practice\obj\Debug\Practice.pdb
