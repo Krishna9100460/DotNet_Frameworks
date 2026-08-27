@@ -1,0 +1,119 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DSA_C_Sharp.LinearData_Structure
+{
+    public class PriorityQueueDataStructure
+    {
+        public void PriorityQueueEx()
+        {
+            //1.Priority Queue is a linear data structure which follows the FIFO principle but with priority.
+            //2.Priority Queue has two main operations A.Enqueue() and B.Dequeue()
+            //3.Enqueue()- Add the element into Priority Queue, Dequeue()- Remove the element from Priority Queue
+            //4.Priority Queue data structure allow duplicate values.
+            //5.Priority Queue memory increment dynamically when the element is added into the queue.
+            //6.Priority Queue also has Peek() method to view the front element without removing it.
+            //7.Priority Queue has Count property to get the number of elements currently in the queue.
+            //8.Priority Queue has Contains() method to check if an element exists in the queue.
+            //9.Priority Queue has Clear() method to remove all elements from the queue.
+            //10.Time Complexity: Enqueue - O(log n), Dequeue - O(log n), Peek - O(1), Clear - O(n)
+            //11.Space Complexity: O(n) where n is the number of elements in the queue.
+            //12.Real-world applications: Task scheduling, Dijkstra's algorithm, Huffman coding, A* search algorithm.
+
+            //ADVANTAGES OF PRIORITY QUEUE:
+            //A.Efficient access to highest priority element - O(1) for peek operation.
+            //B.Automatic sorting - Elements are organized by priority automatically.
+            //C.Real-world applicability - Models priority-based systems like emergency rooms, task scheduling.
+            //D.Flexible priority assignment - Custom priority values can be assigned to elements.
+            //E.Prevents starvation in some cases - Can balance priority with time spent waiting.
+            //F.Better than linear search - Faster than searching through unsorted list for max/min element.
+
+            //DISADVANTAGES OF PRIORITY QUEUE:
+            //A.Higher time complexity - Enqueue/Dequeue are O(log n), slower than regular Queue O(1).
+            //B.Complex implementation - More complex than simple Queue due to heap management.
+            //C.Memory overhead - Requires extra space for priority comparison.
+            //D.Priority inversion - Lower priority tasks might block higher priority ones in some scenarios.
+            //E.No FIFO for same priority - Elements with same priority may not maintain insertion order.
+            //F.Constant priority updates costly - Changing priority of queued elements is expensive.
+
+            PriorityQueue<string, int> priorityQueue = new PriorityQueue<string, int>();
+
+            //Enqueue elements with priorities (lower number = higher priority)
+            priorityQueue.Enqueue("Low", 3);
+            priorityQueue.Enqueue("Medium", 5);
+            priorityQueue.Enqueue("High", 7);
+            priorityQueue.Enqueue("Critical", 1);
+            priorityQueue.Enqueue("Normal", 4);
+
+            Console.WriteLine("========== Priority Queue Operations ==========\n");
+
+            Console.WriteLine("1. Initial Enqueue Operations:");
+            Console.WriteLine("Enqueued: Low (Priority: 3)");
+            Console.WriteLine("Enqueued: Medium (Priority: 5)");
+            Console.WriteLine("Enqueued: High (Priority: 7)");
+            Console.WriteLine("Enqueued: Critical (Priority: 1)");
+            Console.WriteLine("Enqueued: Normal (Priority: 4)");
+            Console.WriteLine();
+
+            //Peek operation
+            Console.WriteLine("2. Peek() Output:");
+            Console.WriteLine("Front element (highest priority): " + priorityQueue.Peek());
+            Console.WriteLine();
+
+            //Count
+            Console.WriteLine("3. Count Output:");
+            Console.WriteLine("Total elements in queue: " + priorityQueue.Count);
+            Console.WriteLine();
+
+            //Dequeue and print all elements in priority order
+            Console.WriteLine("4. Dequeue All Elements (in priority order - lowest value first):");
+            while (priorityQueue.Count > 0)
+            {
+                string element = priorityQueue.Dequeue();
+                Console.WriteLine("Dequeued: " + element);
+            }
+            Console.WriteLine();
+
+            //After all dequeued
+            Console.WriteLine("5. After Dequeue All:");
+            Console.WriteLine("Count: " + priorityQueue.Count);
+            Console.WriteLine();
+
+            //Demonstrate priority with numeric values
+            Console.WriteLine("6. Priority Queue with Numeric Elements:");
+            PriorityQueue<int, int> numPriorityQueue = new PriorityQueue<int, int>();
+            numPriorityQueue.Enqueue(100, 5);
+            numPriorityQueue.Enqueue(50, 2);
+            numPriorityQueue.Enqueue(75, 8);
+            numPriorityQueue.Enqueue(25, 1);
+            numPriorityQueue.Enqueue(150, 10);
+
+            Console.WriteLine("Enqueued numbers with priorities:");
+            Console.WriteLine("100 (Priority: 5)");
+            Console.WriteLine("50 (Priority: 2)");
+            Console.WriteLine("75 (Priority: 8)");
+            Console.WriteLine("25 (Priority: 1)");
+            Console.WriteLine("150 (Priority: 10)");
+            Console.WriteLine();
+
+            Console.WriteLine("Dequeue order (by priority - lowest value first):");
+            while (numPriorityQueue.Count > 0)
+            {
+                int num = numPriorityQueue.Dequeue();
+                Console.WriteLine("Dequeued: " + num);
+            }
+            Console.WriteLine();
+
+            //Output explanation
+            Console.WriteLine("========== Expected Output Explanation ==========");
+            Console.WriteLine("Priority Queue dequeues elements based on LOWEST priority value first.");
+            Console.WriteLine("Priority order: 1 (Critical) → 2 (50) → 3 (Low) → 4 (Normal) → 5 (Medium)");
+            Console.WriteLine("               → 8 (High) → 10 (150)");
+            Console.WriteLine("\nThis is a MIN-HEAP implementation (lower priority value = higher urgency)");
+        }
+    }
+}

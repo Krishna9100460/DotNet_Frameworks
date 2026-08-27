@@ -1,0 +1,160 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DSA_C_Sharp.LinearData_Structure
+{
+    public class QueueDataStructure
+    {
+        public void QueueDataEx()
+        {
+
+            //1.Queue is linear data structure which follow the FIFO principle.
+            //2.Queue has two main operations A.Enqueue() and B.Dequeue()
+            //3.Enqueue()- Add the element into Queue, Dequeue()- Remove the element from Queue
+            //4.Queue data structure allow duplicate values.
+            //5.Queue memory increment dynamically when the element is added into the queue.
+            //6.Queue also has Peek() method to view the front element without removing it.
+            //7.Queue has Count property to get the number of elements currently in the queue.
+            //8.Queue has Contains() method to check if an element exists in the queue.
+            //9.Queue has Clear() method to remove all elements from the queue.
+            //10.Time Complexity: Enqueue - O(1), Dequeue - O(1), Peek - O(1), Clear - O(n)
+            //11.Space Complexity: O(n) where n is the number of elements in the queue.
+            //12.Real-world applications: Print queue, CPU scheduling, BFS traversal, customer support systems.
+
+            //ADVANTAGES OF QUEUE:
+            //A.Efficient insertion and deletion - O(1) time complexity for enqueue and dequeue operations.
+            //B.Follows FIFO principle - Maintains order of elements, useful for fair task processing.
+            //C.Memory efficient - Dynamic memory allocation ensures no wastage.
+            //D.Real-world applicability - Naturally models real-world scenarios like queues in stores.
+            //E.Prevents starvation - Fair processing ensures all elements are processed in order.
+            //F.Simple implementation - Easy to understand and implement compared to other data structures.
+            //G.Thread-safe variants available - ConcurrentQueue<T> for multi-threaded scenarios.
+
+            //DISADVANTAGES OF QUEUE:
+            //A.Limited access - Can only access front and rear elements, cannot randomly access middle elements.
+            //B.Memory overhead - Each element requires additional memory for pointers in linked list implementation.
+            //C.No priority support - Standard queue doesn't prioritize elements, processes in strict FIFO order.
+            //D.Inflexible ordering - Cannot modify the order of elements once added.
+            //E.Search inefficiency - Searching for an element requires O(n) time complexity.
+            //F.Not cache-friendly - Linked list implementation leads to poor cache locality.
+            //G.Requires balanced operations - Performance degrades if enqueue/dequeue operations are unbalanced.
+            #region Generic Queue
+            Queue<int> queueData = new Queue<int>();
+
+            //adding - 8 elements are enqueued
+            //EXPLANATION OF CAPACITY:
+            //Capacity is the internal allocated memory size for the queue.
+            //As elements are added, the queue grows dynamically in powers of 2.
+            //Initial capacity: 0
+            //After 1st Enqueue: Capacity becomes 4 (first resize)
+            //After 5th Enqueue: Capacity becomes 8 (second resize when 4 is full)
+            //After 8th Enqueue: Capacity remains 8 (all 8 slots are filled)
+            queueData.Enqueue(1);  //Count: 1, Capacity: 4
+            queueData.Enqueue(2);  //Count: 2, Capacity: 4
+            queueData.Enqueue(3);  //Count: 3, Capacity: 4
+            queueData.Enqueue(4);  //Count: 4, Capacity: 4
+            queueData.Enqueue(5);  //Count: 5, Capacity: 8 (resizes from 4 to 8)
+            queueData.Enqueue(6);  //Count: 6, Capacity: 8
+            queueData.Enqueue(6);  //Count: 7, Capacity: 8
+            queueData.Enqueue(1);  //Count: 8, Capacity: 8
+
+            //Print
+            Console.WriteLine("Queue elements are: ");
+            for (int i = 0; i < queueData.Count; i++)
+            {
+                Console.Write(queueData.ElementAt(i) + " ");
+            }
+            Console.WriteLine();
+
+            //removing 
+            //EXPLANATION OF DEQUEUE:
+            //Dequeue removes the front element (FIFO principle).
+            //After Dequeue: Count decreases to 7, but Capacity remains 8.
+            //Capacity does NOT shrink after removal. It only grows when needed.
+            //This is by design for performance optimization to avoid frequent reallocations.
+            queueData.Dequeue();   //Removes 1, Count: 7, Capacity: 8
+
+            //Print after remove the element 
+            Console.WriteLine("Queue elements after removing the first element: ");
+            for (int i = 0; i < queueData.Count; i++)
+            {
+                Console.Write(queueData.ElementAt(i) + " ");
+            }
+            Console.WriteLine();
+            //Peek
+            Console.WriteLine("Peek() output:");
+            Console.WriteLine("Peek element is: " + queueData.Peek());
+
+            //Contains
+            Console.WriteLine("Contains() Output:");
+            Console.WriteLine("Queue contains 1: " + queueData.Contains(1));
+            Console.WriteLine("Queue contains 7: " + queueData.Contains(7));
+
+            //Capacity
+            Console.WriteLine("Capacity Output:");
+            Console.WriteLine("Capacity of current queue: " + queueData.Capacity);
+            //CAPACITY EXPLANATION:
+            //Capacity = 8 because:
+            //- Queue allocated memory for 8 elements when it needed to grow beyond 4 elements.
+            //- Even though we removed 1 element, the capacity doesn't shrink.
+            //- Capacity is the allocated memory size, while Count is actual elements.
+
+            //Count
+            Console.WriteLine("Count Output:");
+            Console.WriteLine("Count of current queue: " + queueData.Count);
+            //COUNT EXPLANATION:
+            //Count = 7 because:
+            //- Started with 8 elements (after 8 enqueues)
+            //- Removed 1 element (after 1 dequeue)
+            //- Remaining elements: 8 - 1 = 7
+            //- Count represents the actual number of elements currently in the queue.
+
+            //output:
+            //            Linear Data structure - Queue
+            //Queue elements are:
+            //            1 2 3 4 5 6 6 1
+            //Queue elements after removing the first element:
+            //            2 3 4 5 6 6 1
+            //Peek() output:
+            //            Peek element is: 2
+            //Contains() Output:
+            //            Queue contains 1: True
+            //            Queue contains 7: False
+            //            Capacity Output:
+            //            Capacity of current queue: 8
+            //Count Output:
+            //Count of current queue: 7
+
+            Console.WriteLine("----------------------------------------------------");
+            Queue<int> queueData1 = new Queue<int>();
+            Console.WriteLine("Capacity of Queue: " + queueData1.Capacity);
+            queueData1.Enqueue(10);
+            queueData1.Enqueue(20);
+            queueData1.Enqueue(30);
+            queueData1.Enqueue(40);
+            queueData1.Enqueue(50);
+            Console.WriteLine("Capacity of Queue: " + queueData1.Capacity);
+            #endregion
+
+            #region Non-Generic Queue
+            Console.WriteLine("Non-Generic Queue----------------------------------------------------");
+            Queue queueDataNonGeneirc = new Queue();
+            queueDataNonGeneirc.Enqueue(1);
+            queueDataNonGeneirc.Enqueue("Queue");
+            queueDataNonGeneirc.Enqueue(3.14);
+            queueDataNonGeneirc.Enqueue(true);
+
+            foreach (var item in queueDataNonGeneirc)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
+
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "g0HZ84bXo9Q=",
+  "success": true,
+  "projectFilePath": "D:\\Data\\CODE\\DotNet_Frameworks\\DSA\\DSA_C_Sharp\\DSA_C_Sharp\\DSA_C_Sharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GRL'\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\GRL'\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\GRL'\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\GRL'\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

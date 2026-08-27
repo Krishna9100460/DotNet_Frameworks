@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DSA_C_Sharp.Associat_Data_structure
+{
+    public class DistionaryDSA
+    {
+
+        public void DisctionaryEx()
+        {
+            Dictionary<int, string> dic = new Dictionary<int, string>();
+
+            dic.Add(1, "Krishna");
+            dic.Add(2, "Prasad");
+            dic.Add(3, "Addanki");
+            dic.Add(3, "addanki");
+            dic.Add(4, "Sudha");
+
+            Console.WriteLine("Dictionary output :");
+
+            for (int i = 0; i <= dic.Count; i++)
+            {
+                Console.Write(dic.Values);
+            }
+        }
+    }
+}

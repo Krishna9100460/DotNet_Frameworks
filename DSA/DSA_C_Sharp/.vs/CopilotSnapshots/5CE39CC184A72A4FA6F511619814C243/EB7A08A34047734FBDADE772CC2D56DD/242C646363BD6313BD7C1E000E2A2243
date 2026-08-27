@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DSA_C_Sharp.LinearData_Structure
+{
+    public class PriorityQueueDataStructure
+    {
+        public void PriorityQueueEx()
+        {
+            //1.Priority Queue is a linear data structure which follows the FIFO principle but with priority.
+            //2.Priority Queue has two main operations A.Enqueue() and B.Dequeue()
+            //3.Enqueue()- Add the element into Priority Queue, Dequeue()- Remove the element from Priority Queue
+            //4.Priority Queue data structure allow duplicate values.
+            //5.Priority Queue memory increment dynamically when the element is added into the queue.
+            //6.Priority Queue also has Peek() method to view the front element without removing it.
+            //7.Priority Queue has Count property to get the number of elements currently in the queue.
+            //8.Priority Queue has Contains() method to check if an element exists in the queue.
+            //9.Priority Queue has Clear() method to remove all elements from the queue.
+            //10.Time Complexity: Enqueue - O(log n), Dequeue - O(log n), Peek - O(1), Clear - O(n)
+            //11.Space Complexity: O(n) where n is the number of elements in the queue.
+            //12.Real-world applications: Task scheduling, Dijkstra's algorithm, Huffman coding, A* search algorithm.
+
+
+            PriorityQueue<string, int> priorityQueue = new PriorityQueue<string, int>();
+            priorityQueue.Enqueue("Low", 3);
+            priorityQueue.Enqueue("Medium", 5);
+            priorityQueue.Enqueue("High", 7);
+
+            Console.WriteLine("Priority Queue Elements:");
+           
+        }
+    }
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Data\\CODE\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj": {}
+    "D:\\Data\\CODE\\DotNet_Frameworks\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj": {}
   },
   "projects": {
-    "D:\\Data\\CODE\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj": {
+    "D:\\Data\\CODE\\DotNet_Frameworks\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Data\\CODE\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj",
+        "projectUniqueName": "D:\\Data\\CODE\\DotNet_Frameworks\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj",
         "projectName": "ASP.NETCore_FirstAPP",
-        "projectPath": "D:\\Data\\CODE\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj",
+        "projectPath": "D:\\Data\\CODE\\DotNet_Frameworks\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP.csproj",
         "packagesPath": "C:\\Users\\GRL'\\.nuget\\packages\\",
-        "outputPath": "D:\\Data\\CODE\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\obj\\",
+        "outputPath": "D:\\Data\\CODE\\DotNet_Frameworks\\Framework\\ASP.NETCore_FirstAPP\\ASP.NETCore_FirstAPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DSA_C_Sharp.LinearData_Structure
+{
+    public class QueueDataStructure
+    {
+        public void QueueDataEx()
+        {
+            //1.Queue is linear data structure which follow the FIFO principle.
+            //2.Queue has two main operations A.Enqueue() and B.Dequeue()
+            //3.Enqueue()- Add the element into Queue, Dequeue()- Remove the element from Queue
+            //4.Queue data structure allow duplicate values .
+            //5.Queue memory increment dynamically when the element is added into the queue.
+
+            Queue<int> queueData = new Queue<int>();
+        }
+    }
+}

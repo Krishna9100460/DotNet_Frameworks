@@ -1,0 +1,143 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DSA_C_Sharp.Associat_Data_structure
+{
+    /// <summary>
+    /// SORTED LIST DATA STRUCTURE - Complete Notes
+    /// 
+    /// DEFINITION:
+    /// A SortedList is a collection of key-value pairs that are sorted by key.
+    /// It combines the benefits of both Dictionary (fast lookup) and sorted collections.
+    /// SortedList maintains its elements in sorted order based on the key's natural ordering
+    /// or a custom IComparer implementation.
+    /// 
+    /// KEY CHARACTERISTICS:
+    /// 1. Sorted Order: Elements are automatically sorted by key
+    /// 2. Key-Value Pairs: Each key is unique and maps to exactly one value
+    /// 3. Indexed Access: Supports index-based access to elements
+    /// 4. Dual Storage: Uses both array and hash table internally for optimization--note
+    /// 5. Generic: Type-safe key and value types
+    /// 6. Dynamic: Automatically resizes as elements are added/removed
+    /// 
+    /// INTERNAL STRUCTURE:
+    /// - Uses two parallel arrays: one for keys and one for values
+    /// - Maintains keys in sorted order at all times
+    /// - Uses binary search for lookups (O(log n))
+    /// - Requires shifts during insertion/deletion of elements
+    /// 
+    /// ADVANTAGES:
+    /// ✓ Sorted Order: Elements always maintain sorted order by key
+    /// ✓ Indexed Access: Can access elements by index (like array)
+    /// ✓ Range Queries: Efficiently find elements within a key range
+    /// ✓ Binary Search: O(log n) lookup time using sorted property
+    /// ✓ Memory Efficient: Uses contiguous array storage, better cache locality
+    /// ✓ No Hash Collisions: No overhead from hash function computation
+    /// ✓ Predictable Order: Iteration always returns elements in sorted order
+    /// ✓ Custom Comparers: Support for custom sorting rules via IComparer
+    /// ✓ Keys/Values Collections: Direct access to sorted keys and values
+    /// 
+    /// DISADVANTAGES:
+    /// ✗ Slow Insertion: O(n) for insertion due to element shifting
+    /// ✗ Slow Deletion: O(n) for deletion due to element shifting
+    /// ✗ Memory Overhead: Maintains sorted order requiring extra operations
+    /// ✗ No Duplicate Keys: Cannot store multiple values for same key
+    /// ✗ Insertion/Deletion Costly: More expensive than Dictionary for frequent modifications
+    /// ✗ Not Thread-Safe: Requires external synchronization for concurrent access
+    /// ✗ Larger Memory Footprint: Dual array structure consumes more memory than needed
+    /// ✗ No O(1) Operations: Even lookups are O(log n), not O(1)
+    /// 
+    /// TIME COMPLEXITY:
+    /// - Lookup (Get): O(log n) - Uses binary search on sorted keys
+    /// - Insertion (Add): O(n) - Requires finding position + shifting elements
+    /// - Deletion (Remove): O(n) - Requires finding position + shifting elements
+    /// - Index Access: O(1) - Direct array access by index
+    /// - Iteration: O(n) - Linear traversal through sorted elements
+    /// - ContainsKey: O(log n) - Binary search operation
+    /// 
+    /// SPACE COMPLEXITY: O(n) where n is the number of key-value pairs
+    /// 
+    /// COMMON METHODS:
+    /// - Add(key, value): Insert a new key-value pair in sorted order
+    /// - Remove(key): Delete an entry by key
+    /// - RemoveAt(index): Remove element at specific index
+    /// - ContainsKey(key): Check if key exists
+    /// - ContainsValue(value): Check if value exists
+    /// - TryGetValue(key, out value): Safe retrieval
+    /// - IndexOfKey(key): Get index of key (-1 if not found)
+    /// - IndexOfValue(value): Get index of value
+    /// - Clear(): Remove all entries
+    /// - Keys: Get all keys collection (always sorted)
+    /// - Values: Get all values collection (matches key order)
+    /// - GetKeyAtIndex(index): Get key at specific position
+    /// - GetValueAtIndex(index): Get value at specific position
+    /// 
+    /// COMPARISON WITH SIMILAR DATA STRUCTURES:
+    /// 
+    /// Dictionary vs SortedList:
+    /// - Dictionary: O(1) add/remove/lookup, unordered
+    /// - SortedList: O(log n) lookup, O(n) add/remove, sorted
+    /// 
+    /// SortedList vs SortedDictionary:
+    /// - SortedList: Better for frequent lookups, uses arrays, better memory locality
+    /// - SortedDictionary: Better for frequent insertions/deletions, uses red-black tree
+    /// 
+    /// USE CASES:
+    /// 1. Leaderboards: Store scores sorted by player name/score
+    /// 2. Range Queries: Find all entries within key range
+    /// 3. Autocomplete: Store words in sorted order for prefix matching
+    /// 4. Time-Series Data: Events sorted by timestamp for fast time-based lookups
+    /// 5. Cache with LRU: Maintain least-recently-used items in order
+    /// 6. Event Scheduling: Events sorted by priority or execution time
+    /// 7. Sorted Indexes: Database-like indexing on sorted keys
+    /// 8. Navigation: Previous/Next element lookups by index
+    /// 
+    /// WHEN TO USE:
+    /// ✓ When you need frequent lookups (O(log n) is acceptable)
+    /// ✓ When sorted order is important for your application logic
+    /// ✓ When you need index-based access to sorted elements
+    /// ✓ When insertions/deletions are infrequent
+    /// ✓ When you need range queries on sorted keys
+    /// 
+    /// WHEN NOT TO USE:
+    /// ✗ When you need frequent insertions/deletions (use SortedDictionary instead)
+    /// ✗ When you need O(1) insertion/deletion (use Dictionary or List)
+    /// ✗ When you have unsorted data with many updates (use Dictionary)
+    /// ✗ When thread-safety is critical (use SortedDictionary with locks or ConcurrentDictionary)
+    /// 
+    /// PERFORMANCE TIPS:
+    /// 1. Use SortedDictionary for write-heavy scenarios
+    /// 2. Use SortedList for read-heavy scenarios with infrequent updates
+    /// 3. Pre-sort data before bulk insertion when possible
+    /// 4. Use custom IComparer for complex sorting logic
+    /// 5. Batch operations when possible to minimize shift operations
+    /// 
+    /// REAL-WORLD EXAMPLE USE CASE:
+    /// A student grade tracking system where:
+    /// - Key: Student ID (numeric)
+    /// - Value: Student Grade object
+    /// - Students are always sorted by ID
+    /// - Need frequent lookups by ID (O(log n))
+    /// - Occasional new student additions
+    /// - Can efficiently find top 10 students by using indexed access
+    /// </summary>
+    public class SortedListDSA
+    {
+        public void SortedListEx()
+        {
+            SortedList<int, string> sl = new SortedList<int, string>();
+            sl.Add(1, "string");
+            sl.Add(-1, "Krishna");
+            sl.Add(-2, "prasad");
+            sl.Add(-5, "sudha rani");
+
+            foreach (var item in sl)
+            {
+                Console.WriteLine($"Key: {item.Key}, Value: {item.Value}.");
+            }
+        }
+    }
+}

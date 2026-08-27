@@ -1,0 +1,15 @@
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\bin\Debug\net9.0\DSA_C_Sharp.exe
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\bin\Debug\net9.0\DSA_C_Sharp.deps.json
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\bin\Debug\net9.0\DSA_C_Sharp.runtimeconfig.json
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\bin\Debug\net9.0\DSA_C_Sharp.dll
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\bin\Debug\net9.0\DSA_C_Sharp.pdb
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.AssemblyInfoInputs.cache
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.AssemblyInfo.cs
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.csproj.CoreCompileInputs.cache
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.sourcelink.json
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.dll
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\refint\DSA_C_Sharp.dll
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.pdb
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\DSA_C_Sharp.genruntimeconfig.cache
+D:\Data\CODE\DotNet_Frameworks\DSA\DSA_C_Sharp\DSA_C_Sharp\obj\Debug\net9.0\ref\DSA_C_Sharp.dll

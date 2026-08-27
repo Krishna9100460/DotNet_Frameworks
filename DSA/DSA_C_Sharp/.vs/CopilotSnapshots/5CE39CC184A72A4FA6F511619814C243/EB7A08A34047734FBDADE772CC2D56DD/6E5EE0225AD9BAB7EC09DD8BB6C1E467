@@ -1,0 +1,109 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DSA_C_Sharp.LinearData_Structure
+{
+    public class QueueDataStructure
+    {
+        public void QueueDataEx()
+        {
+            //1.Queue is linear data structure which follow the FIFO principle.
+            //2.Queue has two main operations A.Enqueue() and B.Dequeue()
+            //3.Enqueue()- Add the element into Queue, Dequeue()- Remove the element from Queue
+            //4.Queue data structure allow duplicate values.
+            //5.Queue memory increment dynamically when the element is added into the queue.
+            //6.Queue also has Peek() method to view the front element without removing it.
+            //7.Queue has Count property to get the number of elements currently in the queue.
+            //8.Queue has Contains() method to check if an element exists in the queue.
+            //9.Queue has Clear() method to remove all elements from the queue.
+            //10.Time Complexity: Enqueue - O(1), Dequeue - O(1), Peek - O(1), Clear - O(n)
+            //11.Space Complexity: O(n) where n is the number of elements in the queue.
+            //12.Real-world applications: Print queue, CPU scheduling, BFS traversal, customer support systems.
+
+            //ADVANTAGES OF QUEUE:
+            //A.Efficient insertion and deletion - O(1) time complexity for enqueue and dequeue operations.
+            //B.Follows FIFO principle - Maintains order of elements, useful for fair task processing.
+            //C.Memory efficient - Dynamic memory allocation ensures no wastage.
+            //D.Real-world applicability - Naturally models real-world scenarios like queues in stores.
+            //E.Prevents starvation - Fair processing ensures all elements are processed in order.
+            //F.Simple implementation - Easy to understand and implement compared to other data structures.
+            //G.Thread-safe variants available - ConcurrentQueue<T> for multi-threaded scenarios.
+
+            //DISADVANTAGES OF QUEUE:
+            //A.Limited access - Can only access front and rear elements, cannot randomly access middle elements.
+            //B.Memory overhead - Each element requires additional memory for pointers in linked list implementation.
+            //C.No priority support - Standard queue doesn't prioritize elements, processes in strict FIFO order.
+            //D.Inflexible ordering - Cannot modify the order of elements once added.
+            //E.Search inefficiency - Searching for an element requires O(n) time complexity.
+            //F.Not cache-friendly - Linked list implementation leads to poor cache locality.
+            //G.Requires balanced operations - Performance degrades if enqueue/dequeue operations are unbalanced.
+
+            Queue<int> queueData = new Queue<int>();
+
+            //adding 
+            queueData.Enqueue(1);
+            queueData.Enqueue(2);
+            queueData.Enqueue(3);
+            queueData.Enqueue(4);
+            queueData.Enqueue(5);
+            queueData.Enqueue(6);
+            queueData.Enqueue(6);
+            queueData.Enqueue(1);
+
+            //Print
+            Console.WriteLine("Queue elements are: ");
+            for (int i = 0; i < queueData.Count; i++)
+            {
+                Console.Write(queueData.ElementAt(i) + " ");
+            }
+            Console.WriteLine();
+            //removing 
+            queueData.Dequeue();
+
+            //Print after remove the element 
+            Console.WriteLine("Queue elements after removing the first element: ");
+            for (int i = 0; i < queueData.Count; i++)
+            {
+                Console.Write(queueData.ElementAt(i) + " ");
+            }
+            Console.WriteLine();
+            //Peek
+            Console.WriteLine("Peek() output:");
+            Console.WriteLine("Peek element is: " + queueData.Peek());
+
+            //Contains
+            Console.WriteLine("Contains() Output:");
+            Console.WriteLine("Queue contains 1: " + queueData.Contains(1));
+            Console.WriteLine("Queue contains 7: " + queueData.Contains(7));
+
+            //Capacity
+            Console.WriteLine("Capacity Output:");
+            Console.WriteLine("Capacity of current queue: " + queueData.Capacity);
+
+            //Count
+            Console.WriteLine("Count Output:");
+            Console.WriteLine("Count of current queue: " + queueData.Count);
+
+            //output:
+            //            Linear Data structure - Queue
+            //Queue elements are:
+            //            1 2 3 4 5 6 6 1
+            //Queue elements after removing the first element:
+            //            2 3 4 5 6 6 1
+            //Peek() output:
+            //            Peek element is: 2
+            //Contains() Output:
+            //            Queue contains 1: True
+            //            Queue contains 7: False
+            //            Capacity Output:
+            //            Capacity of current queue: 8
+            //Count Output:
+            //Count of current queue: 7
+        }
+    }
+}

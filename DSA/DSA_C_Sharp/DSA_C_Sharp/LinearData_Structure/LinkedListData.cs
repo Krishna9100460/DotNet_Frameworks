@@ -1,0 +1,46 @@
+﻿namespace DSA_C_Sharp.LinearData_Structure
+{
+    public class LinkedListData
+    {
+        public void LinkedListEx()
+        {
+            LinkedList<int> linkedList = new LinkedList<int>();
+
+            Console.WriteLine("3.Linked List");
+            linkedList.AddFirst(0);
+            linkedList.AddLast(3);
+            linkedList.AddAfter(linkedList.First, 1);
+            linkedList.AddBefore(linkedList.Last, 2);
+
+            Console.WriteLine("Linked List output:");
+            for (int i = 0; i < linkedList.Count; i++)
+            {
+                Console.Write(linkedList.ElementAt(i) + "-->");
+            }
+            Console.WriteLine();
+            linkedList.Remove(2);
+            Console.WriteLine("Linked List after remove output:");
+            for (int i = 0; i < linkedList.Count; i++)
+            {
+                Console.Write(linkedList.ElementAt(i) + "-->");
+            }
+            Console.WriteLine();
+
+            linkedList.RemoveFirst();
+            Console.WriteLine("After remove first");
+            for (int i = 0; i < linkedList.Count; i++)
+            {
+                Console.Write(linkedList.ElementAt(i) + "-->");
+            }
+
+            Console.WriteLine();
+            linkedList.RemoveLast();
+            Console.WriteLine("After RemoveLast:");
+            for (int i = 0; i < linkedList.Count; i++)
+            {
+                Console.Write(linkedList.ElementAt(i) + "-->");
+            }
+
+        }
+    }
+}
